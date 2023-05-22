@@ -119,7 +119,7 @@ def load_image(filename):
 # This is where the program starts
 def main():
     # Load the image first so we know how big to make the window.
-    image = load_image("lena.png")
+    image = load_image("pepper.png")
     # Setup the window using the image size
     win = GraphWin('Image Art', image.getWidth(), image.getHeight(), autoflush=False)
     win.setBackground('yellow') # This is here to help see if the image is centered.
@@ -154,5 +154,5 @@ def main():
 
     win.close()
 
-# This is the only code the is not indented, so this is the first line executed.
+# This is the only code that is not indented, so this is the first line executed.
 main()
