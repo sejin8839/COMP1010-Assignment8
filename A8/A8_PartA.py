@@ -1,5 +1,5 @@
 '''
-# Assignment written by:
+# Assignment written by: Sejin Yoon
 '''
 
 # Assignment 8 Part A.
@@ -10,7 +10,9 @@
 
 values = ["Eleni", "Peter", 100]
 # Write your loop after this line
-
+for value in values:
+    print(value, end=' ')
+print()
 
 
 # Given values above, the loop should print
@@ -23,7 +25,8 @@ values = ["Eleni", "Peter", 100]
 # and print the result.
 
 # Write your function below this line
-
+def multiply(x, y):
+    return x * y
 
 
 # This code will test the multiply function
@@ -32,7 +35,8 @@ number2 = 10
 # Below this comment, write a call to multiply with number1 and number2
 # as arguments and store the result in a variable called answer.
 # Then print answer
-
+answer = multiply(number1, number2)
+print(answer)
 
 # The above code should print
 # 50
@@ -46,7 +50,7 @@ number2 = 10
 # Finish this function by replacing the return line with your own lines
 # of code.
 def even_elements(input_list):
-    return "replace this line with your code"
+    return input_list[::2]
 
 # The function is called with this data
 even_vals = even_elements([2,3,4,5,6,7,8,9])
